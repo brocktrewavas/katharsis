@@ -1,0 +1,173 @@
+<!DOCTYPE html>
+<html lang="en-us">
+<head>
+	<meta charset="utf-8">
+	<meta content="width=device-width, initial-scale=1" name="viewport" />
+	<link rel="stylesheet" href="main.css">
+	<link href='https://fonts.googleapis.com/css?family=Roboto' rel='stylesheet'>
+	<script src="TemplateData/UnityProgress.js"></script>
+	<script src="Build/UnityLoader.js"></script>
+	<script>
+		var gameInstance = UnityLoader.instantiate("gameContainer", "Build/ClickDestroyerBuild.json", {onProgress: UnityProgress});
+	</script>
+	<title>Katharsis</title>
+</head>
+<body>
+
+	<header>
+		<div class="landing-page">
+			<h1>katharsis</h1>
+			<h6>augmented reality application designed for stress relief</h6>
+		</div>
+	</header>
+
+	<section class= "aim" id="aim">
+		<div class="container">
+			<div class="aim-details">
+				<div class="aim-heading">
+					<h3> Aim: </h3>
+				</div>
+				<p> Katharsis is a speculative application which aims to provide an outlet to release built up stress from your daily life
+					by giving you a consequence-free and fun way to break items.
+					The application is based on cathartic therapy which states expressing aggression such as breaking objects
+					reduces the feeling of anger and stress. 
+				</br>
+			</br>
+			There’s no evidence to supporting cathartic therapy and it should not be used as a substitution to proper mental health care. Though people find expressing their aggression is helpful in the short term.
+		</p>
+	</div>
+	<div class="aim-img">
+		<img src="img/home.png" alt="homescreen">
+	</div>
+</section>
+
+<section class= "howtouse" id="howtouse">
+	<div class="container">
+		<div class="howtouse-img">
+			<img src="img/select.png" alt="obj-selector">
+		</div>
+		<div class="howtouse-details">
+			<div class="howtouse-heading">
+				<h3> How to use: </h3>
+			</div>
+			<p> Select an object from an array you’d like to destroy.</br>
+			Gesture a throwing motion with your phone.</br>
+		Watch the object fly through the projected virtual environment and break.</br>
+	</p>
+
+	<h6>(Katharsis is not reliable for broken phones)</h6>
+</div>
+</div>
+</section>
+<!-- <img src="img/Landing.png" id="landing" class="center"/> -->
+<section class= "technical" id="technical">
+	<div class="container">
+		<div class="technical-heading">
+			<h3>Technical:</h3>
+		</div>
+		<!--	<div class="format-technical"> -->
+			<div class="technical-requirements">
+				<div class="tech-req">
+					<div class="tech-img-container">
+						<div class="technical-img">
+							<img src="img/projector-logo.png" alt="logo">
+						</div>
+					</div>
+					<h3>Projector</h3>
+					<p> Katharsis requires a 3D DLP data projector to project the virutal environment and holographic objects
+					</p>
+				</div>
+
+				<div class="tech-req">
+					<div class="technical-img">
+						<img src="img/glasses-logo.png" alt="logo">
+					</div>
+					<h3>3D Glasses</h3>
+					<p> 3D DLP projector glasses with the same refresh rate as the projector are required to connect to the data projector to view the environment and holographic objects
+					</p>
+				</div>
+
+				<div class="tech-req">
+					<div class="technical-img">
+						<img src="img/phone-logo.png" alt="logo">
+					</div>
+					<h3>Mobile Phone</h3>
+					<p> A mobile phone(with motion sensing compatiability) is required to connect to the projector and interact with the application.
+					</p>
+				</div>
+
+			</div>
+
+		</div>
+	</section>
+
+	<section class= "prototype" id="prototype">
+		<div class="container">
+			<div class="prototype-details">
+				<div class="prototype-heading">
+							<!--	<div class="logo">
+									<img src="img/logo2.png" alt="logo">
+								</div> -->
+								<h3> Prototype: </h3>
+							</div>
+							<p>Katharsis is a speculative based project. A functioning prototype is feasible but there is multiple technical challenges in terms of projecting and viewing the augmented reality environment and objects.</br>
+							</br>
+						If the prototypes projection feature is unfeasible, the design will be adapted still utilize the phones motion sensors but to be viewed in a more simplified version of utilizing the mobiles camera and screen features to view a real environment without the need for a projector. </br></br>
+
+						Katharsis will be developed in Unity 3D as a mobile phone application. If further developed beyond the prototype stage, gamification elements such as scoring, unlockable objects and different play styles will be added.
+					</p>
+				</div>
+				<div class="prototype-img">
+					<img src="img/proto.png" alt="homescreen">
+				</div>
+			</div>
+		</section>
+
+
+		<section class= "styling" id="styling">
+			<div class="container">
+				<div class="styling-img">
+					<img src="img/colour pallete.png" alt="homescreen">
+				</div>
+				<div class="styling-details">
+					<div class="styling-heading">
+							<!--	<div class="logo">
+									<img src="img/logo2.png" alt="logo">
+								</div> -->
+								<h3> styling: </h3>
+							</div>
+							<p>Katharsis’ design styling will have a simple and minimal aesthetic. The UI will contrast the complexity of setting up the application and allow for the user to easily access their tool of destruction. The colour scheme consists of blue colours to help psychologically aid the mind into becoming calm. The logo is designed to be a mix between the destruction of objects and the relief of stress. </p>
+						</div>
+					</div>
+				</section>
+
+				<section class= "demo" id="demo">
+					<div class="container">
+						<div class="demo-details">
+							<div class="demo-heading">
+			<!--	<div class="logo">
+					<img src="img/logo2.png" alt="logo">
+				</div> -->
+				<h3> demo </h3>
+				<div class="demo-game">
+					<div id="gameContainer" style="width: 400px; height: 500px; margin:auto"></div>
+				</div>
+			</div>
+		</div>
+	</div>
+</div>
+</section>
+</section>
+
+<footer class="footer">
+	<div class="reset" id="reset">
+		<img src="img/up-button.png" alt="logo">
+	</div>
+	<h3> Brock Trewavas MDDN352 2019 </h3>
+
+</footer>
+
+<script src="main.js"></script>
+
+</body>
+</html>
