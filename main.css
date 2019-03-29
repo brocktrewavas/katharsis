@@ -1,3 +1,4 @@
+/* Global Styling for the page */
 * {
 	margin: 0;
 	padding: 0;
@@ -44,6 +45,8 @@ header {
 	height:100vh;
 }
 
+
+/* Header styling for the page start*/
 .landing-page {
 	position: absolute;
 	padding:5%;
@@ -65,6 +68,9 @@ header {
 	font-size: 2rem;
 	font-weight: lighter;
 }
+/* Header section styling for the page end */
+
+/* Aim section styling for the page start */
 
 .aim-heading {
 	text-align: center;
@@ -86,11 +92,13 @@ header {
 }
 
 .aim-details {
-		max-width: 400px;
+	max-width: 400px;
 }
 
+/* Aim section styling for the page end */
 
-/** **/
+/* How to use section styling for the page */
+
 .howtouse-heading {
 	text-align: center;
 	margin-bottom: 2rem;
@@ -103,7 +111,6 @@ header {
 	background-color:rgba(23,54,81,0.4);
 	padding: 5%;
 	border: 1px solid #f4f4f4
-	/* border: 1px solid #fff */
 }
 
 .howtouse-img	img {
@@ -126,6 +133,11 @@ header {
 	text-align: center;
 
 }
+
+/* How to use section styling for the page end */
+
+/* Technical section styling for the page */
+
 .technical-heading {
 	text-align: center;
 	margin-bottom: 2rem;
@@ -138,7 +150,6 @@ header {
 }
 
 .technical-requirements{
-	/* margin-top: 10rem; */
 	display: grid;
 	grid-template-columns: repeat(auto-fit, minmax(25rem, 1fr));
 	grid-gap: 2.5rem;
@@ -152,6 +163,9 @@ header {
 	margin: auto;
 }
 
+/* Technical section styling for the page end */
+
+/* Prototype section styling for the page start */
 
 .prototype-heading {
 	text-align: center;;
@@ -164,7 +178,6 @@ header {
 	background-color:rgba(23,54,81,0.4);
 	padding: 2.5% 5% 5% 5%;
 	border: 1px solid #f4f4f4
-	/* border: 1px solid #fff */
 }
 .prototype-details {
 	max-width: 400px;
@@ -174,6 +187,10 @@ header {
 	max-width: 100%;
 	padding: 2rem;
 }
+
+/* Prototype section styling for the page end */
+
+/* Visual direction section styling for the page */
 
 .styling-heading {
 	text-align: center;;
@@ -186,7 +203,6 @@ header {
 	background-color:rgba(23,54,81,0.4);
 	padding: 2.5% 5% 5% 5%;
 	border: 1px solid #f4f4f4
-	/* border: 1px solid #fff */
 }
 
 .styling-details {
@@ -198,6 +214,10 @@ header {
 	max-width: 100%;
 	padding: 2rem;
 }
+
+/* Styling section styling for the page end*/
+
+/* Demo section styling for the page start */
 
 .demo .container{
 	display: flex;
@@ -214,104 +234,147 @@ header {
 	margin-bottom: 2rem;
 }
 
-.demo-game {
-	/* border: 1px solid #fff; */
-	cursor: pointer;
-}
+/* failed iframe css */
 
-.footer{
-	width: 100%;
-	text-align:center;
-	background-color:rgba(23,54,81,0.8);
-	padding: 1rem 0;
+/*.demo-container {
 	position: relative;
+	padding-bottom: 56.25%;
+	padding-top: 35px;
+	height: 0;
+	overflow: hidden;
 }
 
-.reset{
+.demo-container iframe {
 	position: absolute;
-	width: 5rem;
-	height: 5rem;
-	top: -2.5rem;
-	right: 5rem;
-	border-radius: 100%;
-	display: flex;
-	animation: interact 2s infinite;
-	cursor: pointer;
-}
-
-.reset img{
+	top:0;
+	left: 0;
 	width: 100%;
+	height: 100%;
+	} */
+
+/*.demo-container{
+	position: relative;
+	overflow: hidden;
+	padding-top: 50%;
 }
 
-@keyframes interact {
-	0%{
-		box-shadow: 0 0 0 0 rgba(244, 244, 244, 0.5);
-	}
-	70%{
-		box-shadow: 0 0 0 .5rem rgba(244, 244, 244, 0.5);
-	}
-	100%{
-		box-shadow: 0 0 0 0 rgba(244, 244, 244, 0.5);
+.demo-iframe{
+	position: absolute;
+	top:0;
+	left:0;
+	width: 100%;
+	height:100%;
+	border:;
+	}*/
 
-}
-}
+	/* Demo section styling for the page end*/
 
-/* media queries */
+	/* Footer section styling for the page start*/
 
-@media screen and (max-width: 768px) {
-
-	body {
-		background: url("img/sitebg2.png") no-repeat center fixed;
-		background-size: cover;
-	}
-
-	.landing-page h1 {
-		font-size: 5rem;
-
+	.footer{
+		width: 100%;
+		text-align:center;
+		background-color:rgba(23,54,81,0.8);
+		padding: 1rem 0;
+		position: relative;
 	}
 
-	.landing-page h6 {
-		font-size: 1.5rem;
+	/* Footer section styling for the page end*/
 
+	/* Button styling start*/
+	.reset{
+		position: absolute;
+		width: 5rem;
+		height: 5rem;
+		top: -2.5rem;
+		right: 5rem;
+		border-radius: 100%;
+		display: flex;
+		animation: interact 2s infinite;
+		cursor: pointer;
 	}
 
-	.aim .container {
-		flex-direction: column;
+	.reset img{
+		width: 100%;
 	}
 
-	.howtouse .container {
-		flex-direction: column;
-	}
+	/* Button styling end */
 
-	.prototype .container {
-		flex-direction: column;
-	}
-
-	.styling .container {
-		flex-direction: column;
-	}
-
-	.up {
-		right: 2rem;
-	}
-
-	.footer h3 {
-		font-size: 1rem;
-	}
-
-	@media screen and (max-width: 600px){
-
-		p {
-			font-size: 1.5rem;
-			text-align: center;
+	/* Animation for button to show interactable */
+	@keyframes interact {
+		0%{
+			box-shadow: 0 0 0 0 rgba(244, 244, 244, 0.5);
 		}
-
-		h3 {
-			font-size: 2rem;
-			text-transform: uppercase;
-			letter-spacing: 2px;
-			margin: 2rem -2px 2rem 0;
+		70%{
+			box-shadow: 0 0 0 .5rem rgba(244, 244, 244, 0.5);
 		}
+		100%{
+			box-shadow: 0 0 0 0 rgba(244, 244, 244, 0.5);
+
+		}
+		/* Button styling end */
 
 
-	}
+		/* media queries */
+
+		/* Responsive change for tablet */
+
+		@media screen and (max-width: 768px) {
+
+			body {
+				background: url("img/sitebg2.png") no-repeat center fixed;
+				background-size: cover;
+			}
+
+			.landing-page h1 {
+				font-size: 5rem;
+
+			}
+
+			.landing-page h6 {
+				font-size: 1.5rem;
+
+			}
+
+			.aim .container {
+				flex-direction: column;
+			}
+
+			.howtouse .container {
+				flex-direction: column;
+			}
+
+			.prototype .container {
+				flex-direction: column;
+			}
+
+			.styling .container {
+				flex-direction: column;
+			}
+
+			.up {
+				right: 2rem;
+			}
+
+			.footer h3 {
+				font-size: 1rem;
+			}
+
+			/* Responsive change for phone */
+
+			@media screen and (max-width: 600px){
+
+				p {
+					font-size: 1.5rem;
+					text-align: center;
+				}
+
+				h3 {
+					font-size: 2rem;
+					text-transform: uppercase;
+					letter-spacing: 2px;
+					margin: 2rem -2px 2rem 0;
+				}
+
+
+			}

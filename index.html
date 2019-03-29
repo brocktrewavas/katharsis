@@ -5,15 +5,11 @@
 	<meta content="width=device-width, initial-scale=1" name="viewport" />
 	<link rel="stylesheet" href="main.css">
 	<link href='https://fonts.googleapis.com/css?family=Roboto' rel='stylesheet'>
-	<script src="TemplateData/UnityProgress.js"></script>
-	<script src="Build/UnityLoader.js"></script>
-	<script>
-		var gameInstance = UnityLoader.instantiate("gameContainer", "Build/ClickDestroyerBuild.json", {onProgress: UnityProgress});
-	</script>
 	<title>Katharsis</title>
 </head>
 <body>
 
+<!-- Header of page -->
 	<header>
 		<div class="landing-page">
 			<h1>katharsis</h1>
@@ -21,6 +17,8 @@
 		</div>
 	</header>
 
+
+<!-- Aim section // Paragraph about aim // mockup image of homescreen -->
 	<section class= "aim" id="aim">
 		<div class="container">
 			<div class="aim-details">
@@ -41,6 +39,8 @@
 	</div>
 </section>
 
+
+<!-- How to use section // Paragraph of instructions // mockup image of selection screen -->
 <section class= "howtouse" id="howtouse">
 	<div class="container">
 		<div class="howtouse-img">
@@ -54,18 +54,19 @@
 			Gesture a throwing motion with your phone.</br>
 		Watch the object fly through the projected virtual environment and break.</br>
 	</p>
-
 	<h6>(Katharsis is not reliable for broken phones)</h6>
 </div>
 </div>
 </section>
-<!-- <img src="img/Landing.png" id="landing" class="center"/> -->
+
+
+
+<!-- Technical section // 3 icons of technical req items // text on each icon -->
 <section class= "technical" id="technical">
 	<div class="container">
 		<div class="technical-heading">
 			<h3>Technical:</h3>
 		</div>
-		<!--	<div class="format-technical"> -->
 			<div class="technical-requirements">
 				<div class="tech-req">
 					<div class="tech-img-container">
@@ -77,7 +78,6 @@
 					<p> Katharsis requires a 3D DLP data projector to project the virutal environment and holographic objects
 					</p>
 				</div>
-
 				<div class="tech-req">
 					<div class="technical-img">
 						<img src="img/glasses-logo.png" alt="logo">
@@ -86,7 +86,6 @@
 					<p> 3D DLP projector glasses with the same refresh rate as the projector are required to connect to the data projector to view the environment and holographic objects
 					</p>
 				</div>
-
 				<div class="tech-req">
 					<div class="technical-img">
 						<img src="img/phone-logo.png" alt="logo">
@@ -95,19 +94,16 @@
 					<p> A mobile phone(with motion sensing compatiability) is required to connect to the projector and interact with the application.
 					</p>
 				</div>
-
 			</div>
-
 		</div>
 	</section>
 
+
+<!-- Prototype section // Paragraph of prototype / development / gamification // mockup image of potential prototype -->
 	<section class= "prototype" id="prototype">
 		<div class="container">
 			<div class="prototype-details">
 				<div class="prototype-heading">
-							<!--	<div class="logo">
-									<img src="img/logo2.png" alt="logo">
-								</div> -->
 								<h3> Prototype: </h3>
 							</div>
 							<p>Katharsis is a speculative based project. A functioning prototype is feasible but there is multiple technical challenges in terms of projecting and viewing the augmented reality environment and objects.</br>
@@ -123,7 +119,7 @@
 			</div>
 		</section>
 
-
+<!-- Visual direction section // Paragraph of visual direction // image of colour pallete and logo -->
 		<section class= "styling" id="styling">
 			<div class="container">
 				<div class="styling-img">
@@ -131,9 +127,6 @@
 				</div>
 				<div class="styling-details">
 					<div class="styling-heading">
-							<!--	<div class="logo">
-									<img src="img/logo2.png" alt="logo">
-								</div> -->
 								<h3> styling: </h3>
 							</div>
 							<p>Katharsis’ design styling will have a simple and minimal aesthetic. The UI will contrast the complexity of setting up the application and allow for the user to easily access their tool of destruction. The colour scheme consists of blue colours to help psychologically aid the mind into becoming calm. The logo is designed to be a mix between the destruction of objects and the relief of stress. </p>
@@ -141,23 +134,28 @@
 					</div>
 				</section>
 
+<!-- Demo Section // Game Demo wrapped in iFrame // Couldn't get styling to work properly(Responsive)-->
 				<section class= "demo" id="demo">
 					<div class="container">
 						<div class="demo-details">
 							<div class="demo-heading">
-			<!--	<div class="logo">
-					<img src="img/logo2.png" alt="logo">
-				</div> -->
 				<h3> demo </h3>
-				<div class="demo-game">
-					<div id="gameContainer" style="width: 400px; height: 500px; margin:auto"></div>
+
+<!-- Click on game canvas button to start // Continue clicking anywhere on game canvas to instantiate donuts to be destroyed -->
+
+				<div class="demo-container">
+					<iframe src="https://brocktrewavas.github.io/donutdestroyer/" style="width: 450px; height:500px; border:0;"></iframe>
 				</div>
+
+
 			</div>
 		</div>
 	</div>
 </div>
 </section>
 </section>
+
+<!-- Footer Section // Name / Course / Year // Button to send to top of page -->
 
 <footer class="footer">
 	<div class="reset" id="reset">
